@@ -72,7 +72,7 @@ body {
   border: 1px solid var(--color-neon);
   background: var(--color-dark);
   color: var(--color-neon);
-  margin-top: 30px;
+  margin-top: 70px;
   padding: 15px 30px;
   font-size: 14px;
   border-radius: 25px;
@@ -668,6 +668,7 @@ body {
 /********************** Partner Start ***********************/
 .partner {
   position: relative;
+  /* width: 100%; */
 }
 
 .partner-container {
@@ -709,13 +710,111 @@ body {
   border: 1px solid #404040;
   border-radius: 10px;
   padding: 15px;
-  
+}
+
 .partner-card {
   background: var(--color-dark);
   width: 100%;
 }
 
 /********************** Partner End ***********************/
+
+/********************** FAQs Start ***********************/
+.faqs {
+  position: relative;
+  /* width: 100%; */
+}
+
+.faqs-container {
+  width: 80%;
+  opacity: 0.75;
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  /* background-color: red; */
+  margin: 0px auto;
+  /* padding: 0px 70px 0px 70px; */
+}
+
+.faqs-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.125rem;
+  margin-bottom: 20px;
+}
+
+.faqs-text {
+  font-size: 25px;
+  text-align: center;
+  padding: 0 120px;
+  margin-bottom: 30px;
+}
+
+.faqs-flex-container {
+  display: flex;
+  /* background-color: red; */
+  width: 80%;
+  margin: 0px auto;
+  gap: 20px;
+}
+
+.faqs-items-container{
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  gap: 43px;
+  padding: 15px;
+}
+.faqs-item{
+  padding: 15px 25px 15px 38px;
+  box-shadow: 1px 20px 50px 0px rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(15px);
+  border: 1px solid #404040;
+  background: rgb(18, 18, 19,0.45);
+  border-radius: 10px;
+}
+
+ .faqs-item-active{
+  padding-top: 50px ;
+  padding-bottom: 50px ;
+}
+.faqs-question-text{
+  font-size: 23px;
+  
+}
+
+.faqs-question{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.faqs-question-text-active{
+color: var(--color-neon);
+}
+.faqs-question .icon{
+  font-size: 40px;
+  font-weight: 300;
+  padding-bottom: 4px;
+
+  
+}
+.icon-active{
+    position: absolute;
+  right: -12px;
+  top: -20px;
+transform: rotate(45deg);
+  color: var(--color-neon);
+}
+.faqs-answer{
+  margin-top: 15px;
+  font-size: 18px;
+  color: var(--color-border);
+  width: 93%;
+}
+/********************** FAQs End ***********************/
 
 /*****************************************************************************************/
 
@@ -762,6 +861,9 @@ body {
 }
 /* Medium Device */
 @media (max-width: 48rem) {
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
 }
 /* Large Device */
 @media (max-width: 62rem) {
