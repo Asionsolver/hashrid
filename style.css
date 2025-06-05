@@ -469,7 +469,7 @@ body {
   width: 80%;
   background: var(--color-dark);
   opacity: 0.75;
-  margin: 80px auto;
+  margin: 0px auto;
   box-shadow: 1px 20px 50px 0px rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(15px);
   border: 1px solid #404040;
@@ -575,7 +575,95 @@ body {
 .features-card-img-2 img {
   width: 200px;
 }
+
 /********************** Features End ***********************/
+
+/********************** Guide Start ***********************/
+.guide {
+  position: relative;
+  /* width: 100%; */
+}
+
+.guide-container {
+  margin: 0px auto;
+}
+
+.guide-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.125rem;
+  margin-bottom: 60px;
+  /* padding: 50px; */
+}
+
+.guide-text {
+  font-size: 25px;
+  text-align: center;
+  padding: 0 190px;
+  margin-bottom: 30px;
+}
+
+.guide-card-container {
+  height: auto;
+  box-shadow: 1px 20px 50px 0px rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(15px);
+  border: 1px solid #404040;
+  border-radius: 10px;
+  padding: 15px 15px 15px 15px;
+  background: var(--color-dark);
+}
+
+.guide-card-container-one {
+  display: flex;
+  gap: 50px;
+}
+.guide-card {
+  background: var(--color-dark);
+  width: 100%;
+}
+
+.guide-card-batch-img {
+  border: 1px solid var(--color-neon);
+  border-radius: 100%;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background: var(--color-neon-light);
+}
+
+.guide-card-img {
+  width: 25rem;
+  display: flex;
+}
+.guide-card-img img {
+  width: 70%;
+  margin: 0 auto;
+}
+.card-step {
+  font-size: 11px;
+  color: var(--color-border);
+}
+.card-main-heading {
+  font-size: 20px;
+}
+.guide-card-text-containers {
+  margin-top: 30px;
+}
+.guide-card-text-container {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-border);
+  width: 300px;
+}
+
+.guide-card-text {
+  font-weight: 400;
+  /* text-wrap: wrap; */
+}
+/********************** Guide End ***********************/
 
 /*****************************************************************************************/
 
@@ -593,7 +681,7 @@ body {
     gap: 0.85rem !important;
   }
   .meet-text {
-    font-size: 225px !important;
+    font-size: 25px !important;
     margin-top: 10px;
     padding: 0px;
   }
