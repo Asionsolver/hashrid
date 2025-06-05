@@ -816,6 +816,107 @@ transform: rotate(45deg);
 }
 /********************** FAQs End ***********************/
 
+
+/********************** Subscribe End ***********************/
+.subscribe {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 400px;
+  /* width: 100%; */
+}
+
+.subscribe-container {
+  width: 80%;
+  opacity: 0.75;
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  /* background-color: red; */
+  margin: 0px auto;
+ 
+}
+
+.subscribe-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.125rem;
+  margin-bottom: 20px;
+  font-family: var(--font-heading);
+}
+
+.subscribe-text {
+  position: relative;
+  font-weight: 600;
+  margin-top: 100px;
+  color: transparent;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(41, 41, 41, 1) 4%,
+    rgba(255, 255, 255, 1) 32%,
+    rgba(103, 103, 103, 1) 55.00000000000001%,
+    rgba(230, 230, 230, 1) 73%
+  );
+  background-clip: text;
+  font-size: 65px;
+  padding: 0 120px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.subscribe-box{
+  position: absolute;
+  display: flex;
+  border: 1px solid #404040;
+  align-items: center;
+  gap: 120px;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: rgba(18, 18, 19, 0.45);
+  right: 200px;
+  bottom: 0px;
+}
+
+.subscribe-box p {
+  color: var(--color-text);
+  padding: 0 30px;
+  font-family: var(--font-main);
+  font-weight: 400;
+}
+/********************** Subscribe End ***********************/
+/********************** Footer Start ***********************/
+.footer{
+  /* background:red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px ;
+  font-family: var(--font-heading);
+  height: 150px;
+  font-size: 15px;
+}
+
+.footer-flex-container{
+  display: flex;
+  gap: 150px;
+}
+
+.footer-nav{
+  display: flex;
+  gap: 70px;
+}
+
+.footer-social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+/********************** Footer End ***********************/
+
 /*****************************************************************************************/
 
 /* Very Small Device */
