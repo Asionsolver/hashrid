@@ -87,8 +87,8 @@ body {
 }
 .left-neon-line {
   position: absolute;
-  top: 336px;
-  width: 327px;
+  top: 462px;
+  width: 322px;
   height: 2px;
   background-color: var(--color-neon);
   box-shadow: 0 0 16px 1px var(--color-neon);
@@ -106,9 +106,9 @@ body {
 .left-neon-line::before {
   content: "";
   position: absolute;
-  top: -254px;
-  left: 327px;
-  height: 256px;
+  top: -318px;
+  left: 320px;
+  height: 320px;
   width: 2px;
   background-color: var(--color-neon);
   box-shadow: 0 0 16px 1px var(--color-neon);
@@ -116,10 +116,10 @@ body {
 .left-neon-line::after {
   content: "";
   position: absolute;
-  top: -254px;
-  left: 327px;
+  top: -318px;
+  left: 320px;
   height: 2px;
-  width: 100px;
+  width: 110px;
   background-color: var(--color-neon);
   box-shadow: 0 0 16px 1px var(--color-neon);
 }
@@ -185,7 +185,9 @@ body {
 .hero-container {
   width: 72.2369rem;
   height: 42.7488rem;
-  border: 2px solid var(--color-border);
+  border-top: 2px solid var(--color-border);
+  border-right: 2px solid var(--color-border);
+  border-left: 2px solid var(--color-border);
   border-top-left-radius: 29px;
   border-top-right-radius: 29px;
   /* border-radius: 29px; */
@@ -194,10 +196,10 @@ body {
   position: relative;
   background: linear-gradient(
     to bottom,
-    rgba(24, 24, 27, 1) 0%,
+    hsl(240, 6%, 10%) 0%,
     rgba(24, 24, 27, 0) 100%
   );
-  box-shadow: 0px 4px 4px 0px #00000040;
+  /* box-shadow: 0px 4px 4px 0px #00000040; */
   padding: 30px;
   backdrop-filter: blur(10px);
 }
@@ -219,15 +221,16 @@ body {
   /* filter: blur(1px); */
 }
 
-.hero-inner-hexagonal {
+.hero-inner-hexagonal img {
   position: absolute;
-  background-image: url(./img/Group\ 47.svg);
+  background-image: url(./img/Group\ 47.png);
   top: -41px;
   right: -68px;
   background-repeat: no-repeat;
   background-size: cover;
   height: 290px;
   width: 250px;
+  z-index: 999;
 }
 
 .navigation {
@@ -372,6 +375,7 @@ body {
 .vectorThree {
   position: absolute;
   top: -90px;
+  left: 500px;
   filter: blur(40px);
 }
 
@@ -394,8 +398,17 @@ body {
 
 .meet-hashrid-left-neon-line {
   position: absolute;
-  top: 430px;
-  width: 327px;
+  top: 558px;
+  width: 321px;
+  height: 2px;
+  background-color: var(--color-neon);
+  box-shadow: 0 0 16px 1px var(--color-neon);
+}
+.meet-hashrid-right-neon-line {
+  position: absolute;
+  top: 803px;
+  right: 19px;
+  width: 286px;
   height: 2px;
   background-color: var(--color-neon);
   box-shadow: 0 0 16px 1px var(--color-neon);
@@ -403,8 +416,8 @@ body {
 
 .meet-hashrid-left-neon-dot {
   position: absolute;
-  top: 172px;
-  left: 647px;
+  top: 235px;
+  left: 636px;
   width: 10px;
   height: 10px;
   background-color: var(--color-neon);
@@ -414,9 +427,9 @@ body {
 .meet-hashrid-left-neon-line::before {
   content: "";
   position: absolute;
-  top: -254px;
-  left: 327px;
-  height: 256px;
+  top: -319px;
+  left: 319px;
+  height: 321px;
   width: 2px;
   background-color: var(--color-neon);
   box-shadow: 0 0 16px 1px var(--color-neon);
@@ -424,12 +437,43 @@ body {
 .meet-hashrid-left-neon-line::after {
   content: "";
   position: absolute;
-  top: -254px;
-  left: 327px;
+  top: -319px;
+  left: 319px;
   height: 2px;
-  width: 327px;
+  width: 322px;
   background-color: var(--color-neon);
   box-shadow: 0 0 16px 1px var(--color-neon);
+}
+
+.meet-hashrid-right-neon-line::before {
+  content: "";
+  position: absolute;
+  top: -245px;
+  right: 285px;
+  height: 247px;
+  width: 2px;
+  background-color: var(--color-neon);
+  box-shadow: 0 0 16px 1px var(--color-neon);
+}
+.meet-hashrid-right-neon-line::after {
+  content: "";
+  position: absolute;
+  top: -246px;
+  right: 285px;
+  height: 2px;
+  width: 116px;
+  background-color: var(--color-neon);
+  box-shadow: 0 0 16px 1px var(--color-neon);
+}
+.meet-hashrid-right-neon-dot {
+  position: absolute;
+  bottom: -406px;
+  right: 8px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-neon);
+  box-shadow: 0 0 16px 1px var(--color-neon);
+  border-radius: 100%;
 }
 
 .meet-hashrid-container {
@@ -464,7 +508,84 @@ body {
   position: relative;
   /* width: 100%; */
 }
+.features-left-neon-line {
+  position: absolute;
+  bottom: -33px;
+  width: 321px;
+  height: 2px;
+  background-color: var(--color-neon);
+  box-shadow: 0 0 16px 1px var(--color-neon);
+}
+.features-right-neon-line {
+  position: absolute;
+  top: 803px;
+  right: 19px;
+  width: 286px;
+  height: 2px;
+  background-color: var(--color-neon);
+  box-shadow: 0 0 16px 1px var(--color-neon);
+}
 
+.features-left-neon-dot {
+  position: absolute;
+  bottom: 282px;
+  left: 636px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-neon);
+  border-radius: 100%;
+}
+.features-left-neon-line::before {
+  content: "";
+  position: absolute;
+  top: -319px;
+  left: 319px;
+  height: 321px;
+  width: 2px;
+  background-color: var(--color-neon);
+  box-shadow: 0 0 16px 1px var(--color-neon);
+}
+.features-left-neon-line::after {
+  content: "";
+  position: absolute;
+  top: -319px;
+  left: 319px;
+  height: 2px;
+  width: 322px;
+  background-color: var(--color-neon);
+  box-shadow: 0 0 16px 1px var(--color-neon);
+}
+
+.features-right-neon-line::before {
+  content: "";
+  position: absolute;
+  top: -245px;
+  right: 285px;
+  height: 247px;
+  width: 2px;
+  background-color: var(--color-neon);
+  box-shadow: 0 0 16px 1px var(--color-neon);
+}
+.features-right-neon-line::after {
+  content: "";
+  position: absolute;
+  top: -246px;
+  right: 285px;
+  height: 2px;
+  width: 116px;
+  background-color: var(--color-neon);
+  box-shadow: 0 0 16px 1px var(--color-neon);
+}
+.features-right-neon-dot {
+  position: absolute;
+  bottom: 287px;
+  right: 14px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-neon);
+  box-shadow: 0 0 16px 1px var(--color-neon);
+  border-radius: 100%;
+}
 .features-container {
   width: 80%;
   background: var(--color-dark);
@@ -666,6 +787,84 @@ body {
 /********************** Guide End ***********************/
 
 /********************** Partner Start ***********************/
+.partner-left-neon-line {
+  position: absolute;
+  top: 303px;
+  width: 321px;
+  height: 2px;
+  background-color: var(--color-neon);
+  box-shadow: 0 0 16px 1px var(--color-neon);
+}
+.partner-right-neon-line {
+  position: absolute;
+  bottom: -16px;
+  right: 19px;
+  width: 286px;
+  height: 2px;
+  background-color: var(--color-neon);
+  box-shadow: 0 0 16px 1px var(--color-neon);
+}
+
+.partner-left-neon-dot {
+  position: absolute;
+  top: -20px;
+  left: 636px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-neon);
+  border-radius: 100%;
+}
+.partner-left-neon-line::before {
+  content: "";
+  position: absolute;
+  top: -319px;
+  left: 319px;
+  height: 321px;
+  width: 2px;
+  background-color: var(--color-neon);
+  box-shadow: 0 0 16px 1px var(--color-neon);
+}
+.partner-left-neon-line::after {
+  content: "";
+  position: absolute;
+  top: -319px;
+  left: 319px;
+  height: 2px;
+  width: 322px;
+  background-color: var(--color-neon);
+  box-shadow: 0 0 16px 1px var(--color-neon);
+}
+
+.partner-right-neon-line::before {
+  content: "";
+  position: absolute;
+  top: -245px;
+  right: 285px;
+  height: 247px;
+  width: 2px;
+  background-color: var(--color-neon);
+  box-shadow: 0 0 16px 1px var(--color-neon);
+}
+.partner-right-neon-line::after {
+  content: "";
+  position: absolute;
+  top: -246px;
+  right: 285px;
+  height: 2px;
+  width: 116px;
+  background-color: var(--color-neon);
+  box-shadow: 0 0 16px 1px var(--color-neon);
+}
+.partner-right-neon-dot {
+  position: absolute;
+  bottom: -20px;
+  right: 14px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-neon);
+  box-shadow: 0 0 16px 1px var(--color-neon);
+  border-radius: 100%;
+}
 .partner {
   position: relative;
   /* width: 100%; */
@@ -720,6 +919,85 @@ body {
 /********************** Partner End ***********************/
 
 /********************** FAQs Start ***********************/
+.faqs-left-neon-line {
+  position: absolute;
+  bottom: -46px;
+  width: 321px;
+  height: 2px;
+  background-color: var(--color-neon);
+  box-shadow: 0 0 16px 1px var(--color-neon);
+}
+.faqs-right-neon-line {
+  position: absolute;
+  bottom: -319px;
+  right: 19px;
+  width: 286px;
+  height: 2px;
+  background-color: var(--color-neon);
+  box-shadow: 0 0 16px 1px var(--color-neon);
+}
+
+.faqs-left-neon-dot {
+  position: absolute;
+  bottom: 319px;
+  left: 636px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-neon);
+  border-radius: 100%;
+}
+
+.faqs-left-neon-line::before {
+  content: "";
+  position: absolute;
+  top: -372px;
+  left: 319px;
+  height: 374px;
+  width: 2px;
+  background-color: var(--color-neon);
+  box-shadow: 0 0 16px 1px var(--color-neon);
+}
+.faqs-left-neon-line::after {
+  content: "";
+  position: absolute;
+  top: -366px;
+  left: 319px;
+  height: 2px;
+  width: 322px;
+  background-color: var(--color-neon);
+  box-shadow: 0 0 16px 1px var(--color-neon);
+}
+
+.faqs-right-neon-line::before {
+  content: "";
+  position: absolute;
+  top: -245px;
+  right: 285px;
+  height: 247px;
+  width: 2px;
+  background-color: var(--color-neon);
+  box-shadow: 0 0 16px 1px var(--color-neon);
+}
+.faqs-right-neon-line::after {
+  content: "";
+  position: absolute;
+  top: -246px;
+  right: 285px;
+  height: 2px;
+  width: 116px;
+  background-color: var(--color-neon);
+  box-shadow: 0 0 16px 1px var(--color-neon);
+}
+.faqs-right-neon-dot {
+  position: absolute;
+  bottom: -323px;
+  right: 14px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-neon);
+  box-shadow: 0 0 16px 1px var(--color-neon);
+  border-radius: 100%;
+}
 .faqs {
   position: relative;
   /* width: 100%; */
@@ -728,9 +1006,9 @@ body {
 .faqs-container {
   width: 80%;
   opacity: 0.75;
-  backdrop-filter: blur(15px);
+
   border-radius: 10px;
-  /* background-color: red; */
+
   margin: 0px auto;
   /* padding: 0px 70px 0px 70px; */
 }
@@ -752,38 +1030,37 @@ body {
 
 .faqs-flex-container {
   display: flex;
-  /* background-color: red; */
+
   width: 80%;
   margin: 0px auto;
   gap: 20px;
 }
 
-.faqs-items-container{
+.faqs-items-container {
   display: flex;
   flex-direction: column;
   flex: 1 1 0;
   gap: 43px;
   padding: 15px;
 }
-.faqs-item{
+.faqs-item {
   padding: 15px 25px 15px 38px;
   box-shadow: 1px 20px 50px 0px rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(15px);
   border: 1px solid #404040;
-  background: rgb(18, 18, 19,0.45);
+  background: rgb(18, 18, 19, 0.45);
   border-radius: 10px;
 }
 
- .faqs-item-active{
-  padding-top: 50px ;
-  padding-bottom: 50px ;
+.faqs-item-active {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
-.faqs-question-text{
+.faqs-question-text {
   font-size: 23px;
-  
 }
 
-.faqs-question{
+.faqs-question {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -791,24 +1068,22 @@ body {
   width: 100%;
 }
 
-.faqs-question-text-active{
-color: var(--color-neon);
+.faqs-question-text-active {
+  color: var(--color-neon);
 }
-.faqs-question .icon{
+.faqs-question .icon {
   font-size: 40px;
   font-weight: 300;
   padding-bottom: 4px;
-
-  
 }
-.icon-active{
-    position: absolute;
+.icon-active {
+  position: absolute;
   right: -12px;
   top: -20px;
-transform: rotate(45deg);
+  transform: rotate(45deg);
   color: var(--color-neon);
 }
-.faqs-answer{
+.faqs-answer {
   margin-top: 15px;
   font-size: 18px;
   color: var(--color-border);
@@ -816,24 +1091,19 @@ transform: rotate(45deg);
 }
 /********************** FAQs End ***********************/
 
-
 /********************** Subscribe End ***********************/
 .subscribe {
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 400px;
-  /* width: 100%; */
 }
 
 .subscribe-container {
   width: 80%;
   opacity: 0.75;
-  backdrop-filter: blur(15px);
   border-radius: 10px;
-  /* background-color: red; */
   margin: 0px auto;
- 
 }
 
 .subscribe-flex {
@@ -864,7 +1134,7 @@ transform: rotate(45deg);
   font-weight: 600;
 }
 
-.subscribe-box{
+.subscribe-box {
   position: absolute;
   display: flex;
   border: 1px solid #404040;
@@ -886,34 +1156,34 @@ transform: rotate(45deg);
 }
 /********************** Subscribe End ***********************/
 /********************** Footer Start ***********************/
-.footer{
+.footer {
   /* background:red; */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 80px ;
+  padding: 80px;
   font-family: var(--font-heading);
   height: 150px;
+  font-weight: 600;
   font-size: 15px;
 }
 
-.footer-flex-container{
+.footer-flex-container {
   display: flex;
   gap: 150px;
 }
 
-.footer-nav{
+.footer-nav {
   display: flex;
   gap: 70px;
 }
 
-.footer-social{
+.footer-social {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
 }
-
 
 /********************** Footer End ***********************/
 
