@@ -478,7 +478,7 @@ body {
 
 .meet-hashrid-container {
   width: 80%;
-  background: var(--color-dark);
+  background: rgb(18, 18, 19, 0.45);
   opacity: 0.75;
   margin: 80px auto;
   box-shadow: 1px 20px 50px 0px rgba(0, 0, 0, 0.7);
@@ -588,14 +588,13 @@ body {
 }
 .features-container {
   width: 80%;
-  background: var(--color-dark);
+  background: rgb(18, 18, 19, 0.45);
   opacity: 0.75;
   margin: 0px auto;
   box-shadow: 1px 20px 50px 0px rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(15px);
   border: 1px solid #404040;
   border-radius: 10px;
-  /* padding: 0px 70px 0px 70px; */
 }
 
 .features-flex {
@@ -726,13 +725,12 @@ body {
 }
 
 .guide-card-container {
-  height: auto;
   box-shadow: 1px 20px 50px 0px rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(15px);
   border: 1px solid #404040;
   border-radius: 10px;
   padding: 15px 15px 15px 15px;
-  background: var(--color-dark);
+  background: rgb(18, 18, 19, 0.45);
 }
 
 .guide-card-container-one {
@@ -740,7 +738,6 @@ body {
   gap: 50px;
 }
 .guide-card {
-  background: var(--color-dark);
   width: 100%;
 }
 
