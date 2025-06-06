@@ -87,20 +87,23 @@ body {
 }
 .left-neon-line {
   position: absolute;
-  top: 462px;
   width: 322px;
   height: 2px;
   background-color: var(--color-neon);
   box-shadow: 0 0 16px 1px var(--color-neon);
 }
+
 .left-neon-dot {
   position: absolute;
-  top: 510px;
-  left: 557px;
+  left: 636px;
   width: 10px;
   height: 10px;
   background-color: var(--color-neon);
   border-radius: 100%;
+}
+
+.left-hero-neon-line {
+  top: 462px;
 }
 
 .left-neon-line::before {
@@ -397,12 +400,7 @@ body {
 }
 
 .meet-hashrid-left-neon-line {
-  position: absolute;
   top: 558px;
-  width: 321px;
-  height: 2px;
-  background-color: var(--color-neon);
-  box-shadow: 0 0 16px 1px var(--color-neon);
 }
 .meet-hashrid-right-neon-line {
   position: absolute;
@@ -415,13 +413,7 @@ body {
 }
 
 .meet-hashrid-left-neon-dot {
-  position: absolute;
   top: 235px;
-  left: 636px;
-  width: 10px;
-  height: 10px;
-  background-color: var(--color-neon);
-  border-radius: 100%;
 }
 
 .meet-hashrid-left-neon-line::before {
@@ -506,16 +498,9 @@ body {
 /********************** Features Start ***********************/
 .features {
   position: relative;
-
-  /* width: 100%; */
 }
 .features-left-neon-line {
-  position: absolute;
   bottom: -100px;
-  width: 321px;
-  height: 2px;
-  background-color: var(--color-neon);
-  box-shadow: 0 0 16px 1px var(--color-neon);
 }
 .features-right-neon-line {
   position: absolute;
@@ -528,13 +513,7 @@ body {
 }
 
 .features-left-neon-dot {
-  position: absolute;
   bottom: 214px;
-  left: 636px;
-  width: 10px;
-  height: 10px;
-  background-color: var(--color-neon);
-  border-radius: 100%;
 }
 .features-left-neon-line::before {
   content: "";
@@ -786,12 +765,7 @@ body {
 
 /********************** Partner Start ***********************/
 .partner-left-neon-line {
-  position: absolute;
   top: 303px;
-  width: 321px;
-  height: 2px;
-  background-color: var(--color-neon);
-  box-shadow: 0 0 16px 1px var(--color-neon);
 }
 .partner-right-neon-line {
   position: absolute;
@@ -804,13 +778,7 @@ body {
 }
 
 .partner-left-neon-dot {
-  position: absolute;
   top: -20px;
-  left: 636px;
-  width: 10px;
-  height: 10px;
-  background-color: var(--color-neon);
-  border-radius: 100%;
 }
 .partner-left-neon-line::before {
   content: "";
@@ -918,12 +886,7 @@ body {
 
 /********************** FAQs Start ***********************/
 .faqs-left-neon-line {
-  position: absolute;
   bottom: -46px;
-  width: 321px;
-  height: 2px;
-  background-color: var(--color-neon);
-  box-shadow: 0 0 16px 1px var(--color-neon);
 }
 .faqs-right-neon-line {
   position: absolute;
@@ -936,13 +899,7 @@ body {
 }
 
 .faqs-left-neon-dot {
-  position: absolute;
   bottom: 319px;
-  left: 636px;
-  width: 10px;
-  height: 10px;
-  background-color: var(--color-neon);
-  border-radius: 100%;
 }
 
 .faqs-left-neon-line::before {
@@ -1077,7 +1034,7 @@ body {
 .icon-active {
   position: absolute;
   right: -12px;
-  top: -20px;
+  top: -51px;
   transform: rotate(45deg);
   color: var(--color-neon);
 }
