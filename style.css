@@ -506,11 +506,12 @@ body {
 /********************** Features Start ***********************/
 .features {
   position: relative;
+
   /* width: 100%; */
 }
 .features-left-neon-line {
   position: absolute;
-  bottom: -33px;
+  bottom: -100px;
   width: 321px;
   height: 2px;
   background-color: var(--color-neon);
@@ -518,7 +519,7 @@ body {
 }
 .features-right-neon-line {
   position: absolute;
-  top: 803px;
+  bottom: -329px;
   right: 19px;
   width: 286px;
   height: 2px;
@@ -528,7 +529,7 @@ body {
 
 .features-left-neon-dot {
   position: absolute;
-  bottom: 282px;
+  bottom: 214px;
   left: 636px;
   width: 10px;
   height: 10px;
@@ -578,7 +579,7 @@ body {
 }
 .features-right-neon-dot {
   position: absolute;
-  bottom: 287px;
+  bottom: -333px;
   right: 14px;
   width: 10px;
   height: 10px;
